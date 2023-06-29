@@ -20,5 +20,8 @@ int main(void)
     cout<<"key: " << itr->first << ", value: " << itr->second << endl;
     ++itr;
   }
+  
+  // Print the size of the map
+  cout << "Size of map: " << map.size() << endl;
   return 0;
 }
