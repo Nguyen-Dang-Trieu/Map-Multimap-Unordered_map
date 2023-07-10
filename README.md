@@ -14,7 +14,7 @@ Chi tiết: `https://www.scaler.com/topics/cpp/map-in-cpp/`
 - Both the functions are `operator []` and `at` are used to `access/retrieve` the `element/value` associated with the key.
 
 - The major difference between the two is that at-will throw an exception if the `key-value pair` is `not present in the map` whereas the `operator []` will `insert` a key-value pair if the key is not present in the map.
-- 
+
 Example: To understand this better.
 ~~~cpp
 #include <iostream>
@@ -63,3 +63,58 @@ Asia-India
 Australia
 ~~~
 ## Capacity
+- These functions are used to find the solution to the queries related to the `size` of the map in general. The `empty()` function returns `a boolean value`, `True` if `the map is empty` that is it does not contain any key-value pair in it, otherwise it returns `False`.
+
+- The `size()` function is used to return `the number of key-value pairs` in the map that is the number of entries in the map, whereas, the `max_size()` returns the upper bound of the entries that can `contain` based on the `memory` that the map has been `allocated`.
+
+Let us take a look at an example to understand these functions.
+~~~cpp
+#include <iostream>
+#include <map>
+
+using namespace std;
+
+int main ()
+{
+    // Creating a map
+    map<int, int> mp;
+
+    // Check if the map is empty or not
+    if (mp.empty())
+        cout << "The map is empty" << endl;
+    else
+        cout << "The map is not empty" << endl;
+
+    // Find the size of the map
+    cout << "The size of the map is: " << mp.size() << endl;
+
+    // Assigning values to the keys - mp[key] = value
+    mp[1] = 14;
+    mp[2] = 45;
+    mp[3] = 69;
+    mp[4] = 25;
+
+    // Check if the map is empty or not
+    if (mp.empty())
+        cout << "The map is empty" << endl;
+    else
+        cout << "The map is not empty" << endl;
+
+    // Find the size of the map
+    cout << "The size of the map is: " << mp.size() << endl;
+
+    // Find the maximum size of the map that is possible
+    cout << "The max size of the map is: " << mp.max_size() << endl;
+
+    return 0;
+}
+~~~
+Output:
+~~~cpp
+The map is empty
+The size of the map is: 0
+The map is not empty
+The size of the map is: 4
+The max size of the map is: 230584300921369395
+~~~
+## Modifiers
