@@ -139,3 +139,6 @@ The max size of the map is: 230584300921369395
 - `lower_bound()`
 - `upper_bound()`
 - `equal_range()`
+
+# Multimap
+Detail: `https://www.scaler.com/topics/cpp/multimap-in-cpp/`
