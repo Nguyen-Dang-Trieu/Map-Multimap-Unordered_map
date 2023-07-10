@@ -1,12 +1,11 @@
 # Map
-Overview
 Maps in C++ are container structures that store elements in `key-value pairs`.This means that for every `unique key`, there is a `data value mapped` to it, that can be easily accessed if we know the key.
 
 This is why every key has to be unique, and `no two keys can be the same`(but the values associated to keys can be the same).
 
 Maps in C++ store the key-value pairs in `sorted order` by default so that the search for any key-value pair can be very quick.
 
-Detail: `https://www.scaler.com/topics/cpp/map-in-cpp/`
+**Detail:** https://www.scaler.com/topics/cpp/map-in-cpp/
 
 # Member Functions
 ## Element Access:
@@ -141,4 +140,10 @@ The max size of the map is: 230584300921369395
 - `equal_range()`
 
 # Multimap
-Detail: `https://www.scaler.com/topics/cpp/multimap-in-cpp/`
+Multimap is an associative container that stores elements in sorted key-value pairs as a tuple. `Multimap can store more than one value against a key`. It is quite similar to the map, but the `difference` is that it can also contain `duplicate keys` that are `not unique`. By default, it uses the < operator to compare the keys.
+
+We can declare a Multimap in C++ as:
+~~~cpp
+multimap <Key_type,Value_type> map_name;
+~~~
+Detail: https://www.scaler.com/topics/cpp/multimap-in-cpp/
