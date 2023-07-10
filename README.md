@@ -118,3 +118,24 @@ The size of the map is: 4
 The max size of the map is: 230584300921369395
 ~~~
 ## Modifiers
+- `insert()`
+- `erase()`
+- `clear()`
+- `swap()`
+- `emplace()`
+- `emplace_hint()`
+## Iterators
+- `begin()`
+- `end()`
+- `rbegin()`
+- `rend()`
+- `cbegin()`
+- `cend()`
+- `crbegin()`
+- `crend()`
+## Searching and Counting
+- `find()`
+- `count()`
+- `lower_bound()`
+- `upper_bound()`
+- `equal_range()`
