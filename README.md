@@ -6,7 +6,7 @@ This is why every key has to be unique, and `no two keys can be the same`(but th
 
 Maps in C++ store the key-value pairs in `sorted order` by default so that the search for any key-value pair can be very quick.
 
-Chi tiết: `https://www.scaler.com/topics/cpp/map-in-cpp/`
+Detail: `https://www.scaler.com/topics/cpp/map-in-cpp/`
 
 # Member Functions
 ## Element Access:
